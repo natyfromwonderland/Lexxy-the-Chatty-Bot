@@ -41,6 +41,15 @@ def getDate():
     weekdayName = week[weekday]
     return "Today is " + weekdayName + ", " + mm + "/" + dd + "/" + yyyy
 
+def getWeekday():
+    now = datetime.now(pytz.timezone(botTimeZone))
+    weekday = now.weekday()
+    week = ['Monday', 'Tuesday', 'Wednesday',
+            'Thursday', 'Friday', 'Saturday', 'Sunday']
+    weekdayName = week[weekday]
+    return "Today is definitely " + weekdayName
+
 print("Hello there!")
 print(getTime())
 print(getDate())
+print(getWeekday())

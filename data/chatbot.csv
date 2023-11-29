@@ -1,5 +1,4 @@
-HumanSays:,RobotSays:
-HumanSays:,RobotSays:
+Human Says:,ChatBot Says:
 What time is it?,getTIME
 What time do you have?,getTIME
 Got the time?,getTIME
@@ -24,13 +23,21 @@ Nothing,I think you hit the wrong key...
 Nothing,What did you want to ask?
 Nothing,Let's talk about something.
 Nothing,One more time?
-Who are you?,I am a ChatBot.
-Who are you?,I am a Python powered ChatBot.
-Who are you?,I am a ChatBot running on Python and a dash of artificial intelligence.
-Hello,Hello World!
-Hi,Hello World!
-Greetings,Hello World!
-Hey,Hello World!
-What's up?,Hello World!
-Who are you?,I am a Chatbot.
-What is your name?,ChatBot.
+Who are you?,I am Lexxy the ChatBot.
+What is your name?,Lexxy.
+Hello,Hello to you!
+Hi!,Hello there!
+How are you?,Not too bad.  How are you?
+I like you.,I like you too.
+I don't like you.,I'm sorry to hear that.
+You are nice.,"Thanks, you seem nice too."
+You are cool.,Ditto!
+You are smart.,I've worked hard to become so.
+Hello,Hi there!
+Hello,Hey!
+Hello,It's nice to see you!
+It's nice to meet you.,It's nice to meet you too!
+I think you are great!,That is nice of you to say!
+How old are you?,Old enough.
+How old are you?,Don't you dare to ask Lexxy about age!
+How old are you?,Lexxy is forever young.
