@@ -9,7 +9,7 @@ from botRespond import getResponse
 
 ##Experimental Date Time
 from dateTime import getTime, getDate
-from mybot.dateTime import getWeekday
+from dateTime import getWeekday
 
 application = Flask(__name__)
 
