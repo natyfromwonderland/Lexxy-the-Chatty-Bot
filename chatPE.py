@@ -8,6 +8,7 @@ from botRespondPE import getResponse
 
 ##Experimental Date Time
 from dateTime import getTime, getDate
+from dateTime import getWeekday
 
 
 chatbotName = myBotName
@@ -47,6 +48,9 @@ def get_bot_response():
     elif botReply == "getDATE":
         botReply = getDate()
         print(getDate())
+    elif botReply == "getWeekday":
+        botReply = getWeekday()
+        print(getWeekday())
     ##Log to CSV file
     print("Logging to CSV file now")
     with open(botLog, 'a', newline='') as logFile:
