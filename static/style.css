@@ -3,7 +3,6 @@
 body {
     font-family: Itim;
     background-color: #000;
-    display: flex;
 }
 
 h1 {
@@ -25,10 +24,10 @@ h3 {
 	width: 100%;
 	max-width: 750px;
 	margin-left: auto; margin-right: auto;
-  background-color: #ccc;
-  padding:3px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+    background-color: #ccc;
+    padding:3px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 	border: 1px solid white;
 }
 
@@ -48,6 +47,7 @@ h3 {
 }
 
 #userInput {
+    display: flex;
     background-color: #fff;
     margin-left: 3px;
     margin-right: auto;
@@ -63,7 +63,7 @@ h3 {
 #textInput {
     padding: 3px;
     margin-left: 3px;
-    width: 90%;
+    width: 80%;
     border: none;
     border-bottom: 3px solid #009688;
     /* font-family: monospace; */
@@ -71,6 +71,7 @@ h3 {
 }
 
 #buttonInput {
+    width: 15%;
     padding: 3px;
     font-family: monospace;
     /* font-size: 17px; */
