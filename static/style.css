@@ -48,17 +48,18 @@ h3 {
 
 #userInput {
     background-color: #fff;
-    margin-left: auto;
+    margin-left: 3px;
     margin-right: auto;
     /*width: 40%;*/
     margin-top: 10px;
-    border: 2px solid white;
+    border: none;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     padding:5px;
 }
 
 #textInput {
+    padding: 3px;
     width: 90%;
     border: none;
     border-bottom: 3px solid #009688;
