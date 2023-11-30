@@ -3,6 +3,7 @@
 body {
     font-family: Itim;
     background-color: #000;
+    display: flex;
 }
 
 h1 {
@@ -50,27 +51,29 @@ h3 {
     background-color: #fff;
     margin-left: 3px;
     margin-right: auto;
-    /*width: 40%;*/
+    /* width: 40%; */
     margin-top: 10px;
     border: none;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     padding:5px;
+    justify-content: space-around;
 }
 
 #textInput {
     padding: 3px;
+    margin-left: 3px;
     width: 90%;
     border: none;
     border-bottom: 3px solid #009688;
-    font-family: monospace;
+    /* font-family: monospace; */
     font-size: 20px;
 }
 
 #buttonInput {
     padding: 3px;
     font-family: monospace;
-    font-size: 17px;
+    /* font-size: 17px; */
 }
 
 .chatSuggest{
