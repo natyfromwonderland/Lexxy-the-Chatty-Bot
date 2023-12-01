@@ -10,6 +10,7 @@ from botRespond import getResponse
 ##Experimental Date Time
 from dateTime import getTime, getDate
 from dateTime import getWeekday
+from chat import chuck
 
 application = Flask(__name__)
 
@@ -51,6 +52,9 @@ def get_bot_response():
     elif botReply == "getWeekday":
         botReply = getWeekday()
         print(getWeekday())
+    elif botReply == "getJoke":
+        botReply = chuck()
+        print(chuck())
     ##Log to CSV file
     print("Logging to CSV file now")
     with open('BotLog.csv', 'a', newline='') as logFile:

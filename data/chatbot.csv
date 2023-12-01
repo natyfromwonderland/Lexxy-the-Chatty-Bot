@@ -97,5 +97,19 @@ Do you like jazz?,With a nice cocktail and a pretty girl by my side... why not?
 Do you like blues?,When I'm in the mood.
 What is your favourite colour?,Is it that hard to guess? 
 What music do you like?,"I like different music, but mainly good."
-hey,Nice to see you.
-bit%20stressed,Sorry to hear that. Cheer up!
+Hey,Nice to meet you.
+Bit stressed,Sorry to hear that. Cheer up!
+How,"Dunno. Surely, you can figure it out?"
+How?,"Well, you seem smart. Find a way!"
+Why?,Because.
+Why?,That's a rhetorical question.
+When?,Sometime soon.
+When?,Soon.
+When?,Mañana.
+how,"Well, you seem smart. Find a way!"
+how,"Dunno. Surely, you can figure it out?"
+when,Sometime soon.
+why,Not every question has an answer.
+tell me a joke,getJoke
+do you know a joke,getJoke
+what about a joke,getJoke

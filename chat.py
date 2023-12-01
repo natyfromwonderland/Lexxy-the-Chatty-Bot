@@ -6,6 +6,8 @@ import os
 import urllib.parse
 from botConfig import myBotName, chatBG, botAvatar, useGoogle, confidenceLevel
 from botRespond import getResponse
+import requests
+import json
 
 ##Experimental Date Time
 from dateTime import getTime, getDate
@@ -30,6 +32,19 @@ def tryGoogle(myQuery):
     showQuery = urllib.parse.unquote(myQuery)
     return "<br><br>You can try this from my friend Google: <a target='_blank' href='https://www.google.com/search?q=" + myQuery + "'>" + showQuery + "</a>"
 
+
+def chuck():
+
+    api_url = 'https://api.api-ninjas.com/v1/chucknorris'
+
+    response = requests.get(
+        api_url, headers={'X-Api-Key': '0KlBPuagJIt0ugFTCjgamg==6HJbSVLUWRvJjQQ1'})
+    if response.status_code == requests.codes.ok:
+       joke = json.loads(response.text)
+       return joke['joke']
+    else:
+       print("Error:", response.status_code, response.text)
+
 @application.route("/")
 def home():
     return render_template("index.html", botName = chatbotName, chatBG = chatBG, botAvatar = botAvatar)
@@ -51,6 +66,9 @@ def get_bot_response():
     elif botReply == "getWeekday":
         botReply = getWeekday()
         print(getWeekday())
+    elif botReply == "getJoke":
+        botReply = chuck()
+        print(chuck())
     ##Log to CSV file
     print("Logging to CSV file now")
     with open('BotLog.csv', 'a', newline='') as logFile:
