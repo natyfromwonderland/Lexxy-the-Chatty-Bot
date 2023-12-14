@@ -45,6 +45,13 @@ def chuck():
     else:
        print("Error:", response.status_code, response.text)
 
+
+def happyReaction():
+    return '<h2>&#128516;</h2>'
+
+def sadReaction():
+    return '<h2>&#128553;</h2>'
+
 @application.route("/")
 def home():
     return render_template("index.html", botName = chatbotName, chatBG = chatBG, botAvatar = botAvatar)
@@ -69,6 +76,10 @@ def get_bot_response():
     elif botReply == "getJoke":
         botReply = chuck()
         print(chuck())
+    elif botReply == "getHappy":
+        botReply = happyReaction()
+    elif botReply == "getSad":
+        botReply = sadReaction()
     ##Log to CSV file
     print("Logging to CSV file now")
     with open('BotLog.csv', 'a', newline='') as logFile:

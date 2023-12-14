@@ -113,3 +113,8 @@ why,Not every question has an answer.
 tell me a joke,getJoke
 do you know a joke,getJoke
 what about a joke,getJoke
+ok thanks,getHappy
+not great,getSad
+how are you,"Not too bad. And you?"
+how are you,"Doing great! You?"
+how are you,"Quite ok. And you?"
