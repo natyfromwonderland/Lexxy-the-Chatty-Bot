@@ -3,10 +3,11 @@
 body {
     font-family: Itim;
     background-color: #000;
+    background-size: auto;
 }
 
 h1 {
-    color: black;
+    color: #F5F5F5;
     margin-bottom: 0;
     margin-top: 0;
     text-align: center;
@@ -20,15 +21,17 @@ h3 {
     text-align: center;
 }
 
+hr {
+    color: #F5F5F5;
+}
+
 .messagecontainer{
 	width: 100%;
 	max-width: 750px;
 	margin-left: auto; margin-right: auto;
-    background-color: #ccc;
     padding:3px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-	border: 1px solid white;
 }
 
 #chatbox {
@@ -48,7 +51,7 @@ h3 {
 
 #userInput {
     display: flex;
-    background-color: #fff;
+    background-color: #F5F5F5;
     margin-left: 3px;
     margin-right: auto;
     /* width: 40%; */
@@ -90,12 +93,12 @@ h3 {
 }
 
 .userText {
-    color: white;
+    color: #343334;
     font-family: monospace;
     font-size: 17px;
     text-align: left;
     line-height: 20px;
-    background-color: #0000FF;
+    background-color: #FFC1D8;
     padding: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -103,8 +106,8 @@ h3 {
 }
 
 .botText {
-    background-color: #F2B100;
-    color: black;
+    background-color: #633188;
+    color: #F5F5F5;
     font-family: monospace;
     font-size: 17px;
     text-align: left;
@@ -129,9 +132,4 @@ h3 {
     bottom:0;
     right:0;
     width: 300px;
-}
-
-chatBG{
-    width:fit-content; 
-    height: fit-content;
 }
